@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.nft {
+    background-color: black;
+    height: 65px;
+
+}
+.info {
+    background-color: red;
+    flex-basis: auto;
+
+}
+.list {
+    list-style: none;
+}
+
+.whale {
+    max-height: 40px;
+}

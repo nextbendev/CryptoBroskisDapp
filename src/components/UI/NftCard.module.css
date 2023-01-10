@@ -1,0 +1,18 @@
+
+.container {
+    display: flex;
+    flex-direction: col;
+
+
+}
+.nftCard {
+    color: blue;
+}
+
+.img{
+ max-height: 20px;
+}
+.card{
+    height: 40px;
+}
+a:link { text-decoration: none; }

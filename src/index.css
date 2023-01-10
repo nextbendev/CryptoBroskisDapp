@@ -1,0 +1,70 @@
+
+
+.header {
+  background-image: url('bg.png');
+  background-size: cover;
+}
+
+.fakeimg {
+  height: 200px;
+  
+  background: #aaa;
+  background-image: url('lottoHeader.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.navbarSizeBs {
+  width: 4.5em;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  background-color: yellow;
+}
+.content {
+  flex: 1;
+}
+
+.nav, .ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  min-width: 15%;
+}
+
+.nav {
+  background-color: blue;
+  /* put the nav on the left */
+  order: -1;
+}
+
+.top,
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  order: -1;
+}
+.ads{
+  background-color: pink;
+  
+  
+  
+}
+
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .content {
+    flex: 1;
+  }
+  .nav, .ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}

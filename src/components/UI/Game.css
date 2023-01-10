@@ -1,0 +1,16 @@
+.containerGame {
+    display: flex;
+    background-color: yellow;
+    flex-direction: row;
+   
+}
+.details {
+
+    flex-grow: 1;
+}
+.prize {
+    text-align: right;
+   justify-content: flex-end;
+   flex-grow: 1;
+ 
+}

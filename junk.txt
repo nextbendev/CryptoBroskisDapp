@@ -1,0 +1,35 @@
+import * as React from 'react';
+import style from "./NftCard.module.css"
+import joePegsIcon from '../../joePegsIcon.png'
+
+export default function NftCard(props) {
+  const nfts = props.nftId.map((nft) =>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+        <img src={`https://cryptobroskis.com/cryptobroskis/joepegsImg/${nft}.png`} className={style.nft} alt="..."></img>
+          <div class="card-body">
+            <h5 class="card-title">#{nft}</h5>
+            <p class="card-text">Generative art project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  
+  );
+
+  return (
+    <div className={style.container}>
+        <div className={ style.main }>
+            <div className={style.a} > 
+            {props.nftId.length > 0 && nfts}
+                      
+            </div>
+        </div>
+   </div>
+  );
+}
